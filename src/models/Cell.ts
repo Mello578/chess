@@ -1,12 +1,12 @@
-import {Color} from "./Color";
-import {Figure} from "./Figure";
+import { Color } from './Color';
+import { Figure } from './Figure';
 
 export class Cell {
-    readonly x: number;
-    readonly y: number;
-    readonly color: Color;
-    figure: Figure | null;
-    readonly id: string;
+    public readonly x: number;
+    public readonly y: number;
+    public readonly color: Color;
+    public figure: Figure | null;
+    public readonly id: string;
 
     constructor(x: number, y: number, color: Color, figure: Figure | null, id: string) {
         this.x = x;

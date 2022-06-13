@@ -1,3 +1,1 @@
-export class Figure {
-
-}
+export class Figure {}

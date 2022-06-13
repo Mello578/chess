@@ -1,14 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState, FC } from 'react';
+
 import './App.css';
 import { BoardComponent } from './components/Board/BoardComponent';
-import {Board} from "./models/Board";
+import { Board } from './models/Board';
 
-export const App = () => {
+export const App: FC = () => {
     const [board, setBoard] = useState(new Board());
 
     useEffect(() => {
         restart();
-    }, [])
+    }, []);
 
     function restart() {
         const newBoard = new Board();
@@ -17,10 +18,10 @@ export const App = () => {
     }
 
     return (
-    <div className="container">
-      <div className="field">
-        <BoardComponent board={board} setBoard={setBoard}/>
-      </div>
-    </div>
-  );
+        <div className="container">
+            <div className="field">
+                <BoardComponent board={board} setBoard={setBoard} />
+            </div>
+        </div>
+    );
 };
