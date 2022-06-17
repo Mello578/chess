@@ -1,12 +1,29 @@
 .cell {
     height: 80px;
     width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell img {
+    width: 60px;
+    height: 60px;
+    position: relative;
 }
 
 .white {
-    background: #ffe9e9;
+    background: #a99494;
 }
 
 .black {
     background: #2658fc;
+}
+
+.selected {
+    background: darkmagenta;
+}
+
+.available {
+
 }

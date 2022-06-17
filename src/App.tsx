@@ -14,6 +14,7 @@ export const App: FC = () => {
     function restart() {
         const newBoard = new Board();
         newBoard.initCells();
+        newBoard.addFigure();
         setBoard(newBoard);
     }
 
